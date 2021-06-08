@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Gourmet-World/static/css/main.90f34c7d.chunk.css",
-    "main.js": "/Gourmet-World/static/js/main.3b385487.chunk.js",
-    "main.js.map": "/Gourmet-World/static/js/main.3b385487.chunk.js.map",
+    "main.js": "/Gourmet-World/static/js/main.ebe1c076.chunk.js",
+    "main.js.map": "/Gourmet-World/static/js/main.ebe1c076.chunk.js.map",
     "runtime-main.js": "/Gourmet-World/static/js/runtime-main.add0989a.js",
     "runtime-main.js.map": "/Gourmet-World/static/js/runtime-main.add0989a.js.map",
     "static/js/2.7cb0410e.chunk.js": "/Gourmet-World/static/js/2.7cb0410e.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.add0989a.js",
     "static/js/2.7cb0410e.chunk.js",
     "static/css/main.90f34c7d.chunk.css",
-    "static/js/main.3b385487.chunk.js"
+    "static/js/main.ebe1c076.chunk.js"
   ]
 }
