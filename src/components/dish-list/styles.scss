@@ -1,0 +1,11 @@
+.dish-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 10px;
+    text-align: center;
+    // background-color: #47597e;
+    // border: 1px solid blue;
+    margin: 10px;
+    padding: 10px;
+    width: 1200px;
+}

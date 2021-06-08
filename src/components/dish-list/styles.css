@@ -1,0 +1,9 @@
+.dish-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  width: 1200px;
+}/*# sourceMappingURL=styles.css.map */
