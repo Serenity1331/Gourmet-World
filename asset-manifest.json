@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/Gourmet-World/static/css/main.fe3c572f.chunk.css",
-    "main.js": "/Gourmet-World/static/js/main.39715c2a.chunk.js",
-    "main.js.map": "/Gourmet-World/static/js/main.39715c2a.chunk.js.map",
-    "runtime-main.js": "/Gourmet-World/static/js/runtime-main.c4353b35.js",
-    "runtime-main.js.map": "/Gourmet-World/static/js/runtime-main.c4353b35.js.map",
-    "static/js/2.a2dfa128.chunk.js": "/Gourmet-World/static/js/2.a2dfa128.chunk.js",
-    "static/js/2.a2dfa128.chunk.js.map": "/Gourmet-World/static/js/2.a2dfa128.chunk.js.map",
-    "static/js/3.068fc29c.chunk.js": "/Gourmet-World/static/js/3.068fc29c.chunk.js",
-    "static/js/3.068fc29c.chunk.js.map": "/Gourmet-World/static/js/3.068fc29c.chunk.js.map",
+    "main.css": "/Gourmet-World/static/css/main.90f34c7d.chunk.css",
+    "main.js": "/Gourmet-World/static/js/main.abb9ddcd.chunk.js",
+    "main.js.map": "/Gourmet-World/static/js/main.abb9ddcd.chunk.js.map",
+    "runtime-main.js": "/Gourmet-World/static/js/runtime-main.add0989a.js",
+    "runtime-main.js.map": "/Gourmet-World/static/js/runtime-main.add0989a.js.map",
+    "static/js/2.7cb0410e.chunk.js": "/Gourmet-World/static/js/2.7cb0410e.chunk.js",
+    "static/js/2.7cb0410e.chunk.js.map": "/Gourmet-World/static/js/2.7cb0410e.chunk.js.map",
     "index.html": "/Gourmet-World/index.html",
-    "static/css/main.fe3c572f.chunk.css.map": "/Gourmet-World/static/css/main.fe3c572f.chunk.css.map",
-    "static/js/2.a2dfa128.chunk.js.LICENSE.txt": "/Gourmet-World/static/js/2.a2dfa128.chunk.js.LICENSE.txt"
+    "static/css/main.90f34c7d.chunk.css.map": "/Gourmet-World/static/css/main.90f34c7d.chunk.css.map",
+    "static/js/2.7cb0410e.chunk.js.LICENSE.txt": "/Gourmet-World/static/js/2.7cb0410e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c4353b35.js",
-    "static/js/2.a2dfa128.chunk.js",
-    "static/css/main.fe3c572f.chunk.css",
-    "static/js/main.39715c2a.chunk.js"
+    "static/js/runtime-main.add0989a.js",
+    "static/js/2.7cb0410e.chunk.js",
+    "static/css/main.90f34c7d.chunk.css",
+    "static/js/main.abb9ddcd.chunk.js"
   ]
 }
