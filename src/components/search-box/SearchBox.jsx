@@ -4,7 +4,7 @@ import './styles.css'
 function SearchBox(props) {
     return (
         <input  type="search" 
-                className="searchBox" 
+                id="searchBox" 
                 placeholder="search"
                 onChange={props.handleSearch} />
     )

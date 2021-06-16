@@ -1,35 +1,96 @@
 .dish {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     width: 550px;
-    // border: 1px solid blue;
+    position: relative;
 }
 
-.dish img {
+.img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.background-image {
+    background-size: cover;
+    background-position: center;
     border-radius: 20px;
     border: 3px solid #293b5f;
+    height: 150px;
+    width: 150px;
+    transition: transform 1s, opacity 1s;
+
+    &:hover {
+        transform: scale(1.2);
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    &:hover ~ .img-cart {
+        visibility: visible;
+        transform: scale(1.2);
+    }
+}
+
+.img-cart {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px;
+    visibility: hidden;
+    pointer-events: none;
+    filter: invert(21%) sepia(10%) saturate(2757%) hue-rotate(182deg) brightness(95%) contrast(93%);
+    transition: transform 1s;
+}
+
+.dish__description {
+    margin-left: 10px;
 }
 
 .dish__title {
     margin: 0;
     padding: 0;
-    position: relative;
     margin-bottom: 10px;
     font-family: 'Amatic SC', cursive;
-    font-size: 38px;
-    letter-spacing: 2px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-align: left;
 
     &::after {
         content: " ";
         display: block;
         position: absolute;
-        width: 200px;
+        width: 320px;
         height: 1px;
         background-color:blue;
-        left: 30px;       
     }
 }
 
 .dish__text {
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+    width: 320px;
+}
+
+.dish__price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: #b6c4ff;
+    border-radius: 20px;
 }

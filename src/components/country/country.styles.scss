@@ -1,0 +1,25 @@
+.countryName {
+    width: 100px;
+    margin: 0 10px 30px;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid #293b5f;
+    opacity: 0.7;
+    transition: background-color 0.5s;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #b6c4ff;
+    }
+  }
+  
+  .chosen {
+    background-color: #b6c4ff;
+    // background-color: #6e779c;
+    border: 2px solid #293b5f;
+    opacity: 1;
+    // color: white;
+  }

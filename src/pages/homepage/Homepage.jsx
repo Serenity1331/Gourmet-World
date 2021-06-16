@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import DishList from '../../components/dish-list/DishList';
 import SearchBox from '../../components/search-box/SearchBox';
+import Country from '../../components/country/Country';
 import './homepage.styles.css'
 
 class Homepage extends Component {
@@ -11,28 +12,46 @@ class Homepage extends Component {
 
     this.state = {
       dishes: [],
-      searchBox: ''
+      searchBox: '',
+      active: 'Italian',
+      dishData: ''
     }
   }
 
-  componentDidMount() {
+  fetchAllData = async () => {
 
-    const imageURLs = [
+    const lst = ['Mexican', 'Indian', 'Chinese', 'Italian', 'Japanese'];
+    const url = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=';
+    const res = {};
 
-      { link: "Gourmet-World/images/tacos.jpeg", id: "1", name: "Tacos", text: "Rolled tortilla filled with various mixtures, such as seasoned mince, chicken, or beans" },
-      { link: "Gourmet-World/images/huitlacoche.jpg", id: "2", name: "Huitlacoche", text: "Tortilla with mexican truffles" },
-      { link: "Gourmet-World/images/burritoVegan.jpg", id: "3", name: "Vegan Burrito", text: "A flour tortilla rolled or folded around veggies, beans, and cheese" },
-      { link: "Gourmet-World/images/chickenFajitas.jpg", id: "4", name: "Chicken Fajitas", text: "A marinated strip of chicken grilled and served with a flour tortilla and various savory fillings" },
-      { link: "Gourmet-World/images/chilaquiles.jpg", id: "5", name: "Chilaquiles", text: "Traditional Mexican breakfast dish consisting of corn tortillas cut into quarters and lightly fried" },
-      { link: "Gourmet-World/images/churrosChocolate.webp", id: "6", name: "Churros", text: "Sweet Spanish snack consisting of a strip of fried dough dusted with cinnamon and covered with chocolate." },
-      { link: "Gourmet-World/images/nachos.webp", id: "7", name: "Nachos", text: "Tortilla chips topped with melted cheese and often also with other savoury toppings" },
-      { link: "Gourmet-World/images/payDeElote.jpg", id: "8", name: "Pay-De-Elote", text: "Mexican pie with a creamy sweet corn custard flavored with cinnamon" }
+    for (let elem of lst) {
+      
+      const link = url + elem;
+      const response = await fetch(link).then(res => res.json());
+      res[elem] = response.meals;
 
-    ]
-
-    this.setState({ dishes: imageURLs })
+    }
+    
+    this.setState({ dishData: res })
+    this.setState({ dishes: res[this.state.active] })
 
   }
+
+  async componentDidMount() {
+
+    await this.fetchAllData()
+
+  }
+
+  displayMenu = (e) => {
+
+    const text = e.target.textContent;
+    const data = this.state.dishData[text];
+
+    this.setState({ dishes: data })
+    this.setState({ active: text })
+
+}
 
   handleSearch = e => {
     this.setState({ searchBox: e.target.value })
@@ -42,9 +61,8 @@ class Homepage extends Component {
 
     const { dishes, searchBox } = this.state;
     const filteredDishes = dishes.filter(dish => {
-      return dish.name.toLowerCase().includes(searchBox.toLowerCase())
+      return dish.strMeal.toLowerCase().includes(searchBox.toLowerCase())
     })
-
 
     return (
     <>
@@ -53,6 +71,15 @@ class Homepage extends Component {
             <Link className="pageLink" to="/Gourmet-World/Contacts">Contacts</Link>
         </nav>
         <h1 className="title">Our Menu</h1>
+
+        <div className="countryList">
+          <Country name='Mexican' onclick={(e) => this.displayMenu(e)} active={this.state.active} />
+          <Country name='Indian' onclick={(e) => this.displayMenu(e)} active={this.state.active} />
+          <Country name='Italian' onclick={(e) => this.displayMenu(e)} active={this.state.active} />
+          <Country name='Japanese' onclick={(e) => this.displayMenu(e)} active={this.state.active} />
+          <Country name='Chinese' onclick={(e) => this.displayMenu(e)} active={this.state.active} />
+        </div>
+
         <SearchBox handleSearch={this.handleSearch} />
         <DishList link={filteredDishes} />
     </>

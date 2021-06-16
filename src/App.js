@@ -14,7 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Route exact path="/Gourmet-World" component={Homepage} />
+        <Route exact path="/Gourmet-World/" component={Homepage} />
         <Route exact path="/Gourmet-World/About" component={AboutPage} />
         <Route exact path="/Gourmet-World/Contacts" component={ContactsPage} />
       </div>
