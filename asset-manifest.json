@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Gourmet-World/static/css/main.31658eb7.chunk.css",
-    "main.js": "/Gourmet-World/static/js/main.6ac2752f.chunk.js",
-    "main.js.map": "/Gourmet-World/static/js/main.6ac2752f.chunk.js.map",
+    "main.css": "/Gourmet-World/static/css/main.c7d86739.chunk.css",
+    "main.js": "/Gourmet-World/static/js/main.e67ddacd.chunk.js",
+    "main.js.map": "/Gourmet-World/static/js/main.e67ddacd.chunk.js.map",
     "runtime-main.js": "/Gourmet-World/static/js/runtime-main.add0989a.js",
     "runtime-main.js.map": "/Gourmet-World/static/js/runtime-main.add0989a.js.map",
     "static/js/2.71ca8248.chunk.js": "/Gourmet-World/static/js/2.71ca8248.chunk.js",
     "static/js/2.71ca8248.chunk.js.map": "/Gourmet-World/static/js/2.71ca8248.chunk.js.map",
     "index.html": "/Gourmet-World/index.html",
-    "static/css/main.31658eb7.chunk.css.map": "/Gourmet-World/static/css/main.31658eb7.chunk.css.map",
+    "static/css/main.c7d86739.chunk.css.map": "/Gourmet-World/static/css/main.c7d86739.chunk.css.map",
     "static/js/2.71ca8248.chunk.js.LICENSE.txt": "/Gourmet-World/static/js/2.71ca8248.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.add0989a.js",
     "static/js/2.71ca8248.chunk.js",
-    "static/css/main.31658eb7.chunk.css",
-    "static/js/main.6ac2752f.chunk.js"
+    "static/css/main.c7d86739.chunk.css",
+    "static/js/main.e67ddacd.chunk.js"
   ]
 }
